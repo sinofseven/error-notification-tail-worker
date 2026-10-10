@@ -8,6 +8,10 @@
     "deploy": "cf deploy",
     "typecheck": "cf workers types && tsc"
   },
+  "dependencies": {
+    "@logtape/logtape": "^2.0.28",
+    "@logtape/redaction": "^2.0.28"
+  },
   "devDependencies": {
     "@cloudflare/vite-plugin": "beta",
     "cf": "^1.0.0-beta.14",
@@ -15,9 +19,5 @@
     "oxlint": "^1.87.0",
     "typescript": "^7.0.2",
     "vite": "^8.3.0"
-  },
-  "dependencies": {
-    "@logtape/logtape": "^2.0.28",
-    "@logtape/redaction": "^2.0.28"
   }
 }
