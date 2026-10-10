@@ -68,7 +68,7 @@ const generateObservabilityUrl = loggingSyncFunctionWrapper(
     return [
       "https://dash.cloudflare.com/",
       env.CLOUDFLARE_ACCOUNT_ID,
-      "/worers/services/view/",
+      "/workers/services/view/",
       workerName,
       "/production/observability/events?",
       params.toString(),
