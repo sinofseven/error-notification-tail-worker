@@ -1,0 +1,23 @@
+{
+  "$schema": "./node_modules/oxfmt/configuration_schema.json",
+  "ignorePatterns": [],
+  "sortImports": {
+    "newlinesBetween": true,
+    "partitionByComment": true,
+    "customGroups": [
+      {
+        "groupName": "alias-src",
+        "elementNamePattern": ["@/**"]
+      }
+    ],
+    "groups": ["builtin", "external", "alias-src", "parent", "sibling", "index", "unknown"]
+  },
+  "overrides": [
+    {
+      "files": ["*.jsonc", "**/*.jsonc"],
+      "options": {
+        "trailingComma": "none"
+      }
+    }
+  ]
+}
